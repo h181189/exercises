@@ -1,8 +1,8 @@
 package no.hib.h181189.exercise1;
 
-import javax.swing.JOptionPane;
-
 import no.hib.h181189.exercises.Problem;
+
+import javax.swing.JOptionPane;
 
 public class Problem3 implements Problem {
 
