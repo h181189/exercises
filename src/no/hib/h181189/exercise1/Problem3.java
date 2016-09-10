@@ -7,7 +7,7 @@ import javax.swing.JOptionPane;
 public class Problem3 implements Problem {
 
 	@Override
-	public int solve() {
+	public int solution() {
 //		Scanner input = new Scanner(System.in);
 //		System.out.println("Enter an amount of seconds");
 //		int time = input.nextInt();		

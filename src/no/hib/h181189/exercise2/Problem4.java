@@ -9,7 +9,7 @@ import no.hib.h181189.exercises.Problem;
 public class Problem4 implements Problem {
 
 	@Override
-	public int solve() {
+	public int solution() {
 		
 		int min = Integer.parseInt(JOptionPane.showInputDialog("Enter a minimum limit:"));
 		int max = Integer.parseInt(JOptionPane.showInputDialog("Enter a maximum limit:"));

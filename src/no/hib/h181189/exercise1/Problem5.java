@@ -6,7 +6,7 @@ import no.hib.h181189.exercises.Problem;
 public class Problem5 implements Problem {
 
 	@Override
-	public int solve() {
+	public int solution() {
 		first();
 		return 0;
 	}

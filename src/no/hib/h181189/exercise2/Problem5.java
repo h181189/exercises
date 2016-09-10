@@ -10,8 +10,12 @@ public class Problem5 implements Problem {
 	final int MIN_LIMIT = 0;
 
 	@Override
-	public int solve() {
-
+	public int solution() {
+		solve();
+		return 0;
+	}
+	
+	private void solve() {
 		for (int i = 0; i < 10; i++) {
 			int score;
 			do {
@@ -26,8 +30,6 @@ public class Problem5 implements Problem {
 			JOptionPane.showMessageDialog(null, "The grade for this student is " + grade + ".");
 
 		}
-
-		return 0;
 	}
 
 	private boolean isIllegal(int score) {
