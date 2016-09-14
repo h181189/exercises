@@ -7,7 +7,7 @@ import javax.swing.JOptionPane;
 public class Problem1_3 implements Problem {
 
 	@Override
-	public int solution() {
+	public void solve() {
 //		Scanner input = new Scanner(System.in);
 //		System.out.println("Enter an amount of seconds");
 //		int time = input.nextInt();		
@@ -23,7 +23,6 @@ public class Problem1_3 implements Problem {
 		String solution = hourSolution + minuteSolution + secondSolution;
 
 		System.out.println(solution);
-		return 0;
 	}
 
 }

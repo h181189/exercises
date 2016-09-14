@@ -10,12 +10,7 @@ public class Problem2_5 implements Problem {
 	final int MIN_LIMIT = 0;
 
 	@Override
-	public int solution() {
-		solve();
-		return 0;
-	}
-	
-	private void solve() {
+	public void solve() {
 		for (int i = 0; i < 10; i++) {
 			int score;
 			do {
@@ -28,7 +23,6 @@ public class Problem2_5 implements Problem {
 
 			char grade = getGrade(score);
 			JOptionPane.showMessageDialog(null, "The grade for this student is " + grade + ".");
-
 		}
 	}
 

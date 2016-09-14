@@ -7,11 +7,7 @@ import no.hib.h181189.exercises.Problem;
 public class Problem3_3 implements Problem {
 
 	@Override
-	public int solution() {
-		return (int) b(5, 3);
-	}
-	
-	private void solve() {
+	public void solve() {
 		Scanner input = new Scanner(System.in);
 		
 		System.out.println("Enter a number:");
@@ -21,7 +17,7 @@ public class Problem3_3 implements Problem {
 		int b = input.nextInt();
 		
 		System.out.println("Math.pow(" + a + ", " + b + ") = " + a(a, b) + ".");
-		System.out.println("Method 2: " + b(a, b));
+		System.out.println("Method 2: " + b(a, b));		
 	}
 	
 	private int a(int a, int b) {

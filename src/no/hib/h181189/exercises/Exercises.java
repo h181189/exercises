@@ -6,7 +6,7 @@ public class Exercises {
 
 	public static void main(String[] args) {
 		Problem p = new Problem3_3();
-		System.out.println(p.solution());
+		p.solve();
 	}
 	
 }

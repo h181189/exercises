@@ -7,27 +7,16 @@ import no.hib.h181189.exercises.Problem;
 public class Problem2_3 implements Problem {
 
 	@Override
-	public int solution() {
-		second();
-		return 0;
-	}
-	
-	private int first() {
-		System.out.println("Enter a number:");
-		Scanner input = new Scanner(System.in);
-		int number = input.nextInt();
-		String[] districts = { "Gamle Oslo", "Grünerløkka", "Sagene", "St. Hanshaugen", "Frogner", "Ullern",
-				"Vestre Aker", "Nordre Aker", "Bjerke", "Grorud", "Stovner", "Alna", "Østensjø", "Nordstrand",
-				"Søndre Nordstrand" };
-		System.out.println("Bydel " + number + " heter " + districts[number - 1]);
-		return number;
-	}
-	
-	private void second() {
+	public void solve() {
 		int number;
 		do {
-			number = first();
+			System.out.println("Enter a number:");
+			Scanner input = new Scanner(System.in);
+			number = input.nextInt();
+			String[] districts = { "Gamle Oslo", "Grünerløkka", "Sagene", "St. Hanshaugen", "Frogner", "Ullern",
+					"Vestre Aker", "Nordre Aker", "Bjerke", "Grorud", "Stovner", "Alna", "Østensjø", "Nordstrand",
+					"Søndre Nordstrand" };
+			System.out.println("Bydel " + number + " heter " + districts[number - 1]);
 		} while(number != 10);
 	}
-	
 }

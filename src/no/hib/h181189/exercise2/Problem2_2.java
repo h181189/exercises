@@ -7,25 +7,25 @@ import no.hib.h181189.exercises.Problem;
 public class Problem2_2 implements Problem {
 
 	@Override
-	public int solution() {
-		
-		Scanner input = new Scanner(System.in); 
-		
+	public void solve() {
+		Scanner input = new Scanner(System.in);
+
 		System.out.println("Find the biggest number of:");
 		String[] numbersInput = input.nextLine().split(", ");
 		int[] numbers = new int[numbersInput.length];
-		for(int i = 0; i < numbersInput.length; i++) {
+		for (int i = 0; i < numbersInput.length; i++) {
 			numbers[i] = Integer.parseInt(numbersInput[i]);
 		}
-		
+
 		int biggestNumber = numbers[0];
-		for(int number : numbers) {
-			if(number > biggestNumber) biggestNumber = number;
-//			biggestNumber = Math.max(biggestNumber, number);
-//			if(biggestNumber - number < 0) biggestNumber = number;
+		for (int number : numbers) {
+			if (number > biggestNumber)
+				biggestNumber = number;
+			// biggestNumber = Math.max(biggestNumber, number);
+			// if(biggestNumber - number < 0) biggestNumber = number;
 		}
-				
-		return biggestNumber;
+
+		System.out.println(biggestNumber);
 	}
 
 }

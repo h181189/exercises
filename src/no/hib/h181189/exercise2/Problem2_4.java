@@ -9,8 +9,7 @@ import no.hib.h181189.exercises.Problem;
 public class Problem2_4 implements Problem {
 
 	@Override
-	public int solution() {
-		
+	public void solve() {
 		int min = Integer.parseInt(JOptionPane.showInputDialog("Enter a minimum limit:"));
 		int max = Integer.parseInt(JOptionPane.showInputDialog("Enter a maximum limit:"));
 		
@@ -24,8 +23,6 @@ public class Problem2_4 implements Problem {
 		}
 		
 		JOptionPane.showMessageDialog(null, "The result is:\n" + oddNumbers.toString());
-		
-		return 0;
 	}
 	
 }

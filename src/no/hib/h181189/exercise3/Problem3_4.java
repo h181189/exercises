@@ -6,13 +6,7 @@ import no.hib.h181189.exercises.Problem;
 public class Problem3_4 implements Problem {
 
 	@Override
-	public int solution() {
-		solve();
-		System.out.println();
-		return 0;
-	}
-
-	private void solve() {
+	public void solve() {
 		Out output = new Out();
 		output.out("x i grader", 16, Out.RIGHT);
 		output.out("x i radianer", 16, Out.RIGHT);

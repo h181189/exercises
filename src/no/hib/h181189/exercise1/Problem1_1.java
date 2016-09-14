@@ -5,8 +5,8 @@ import no.hib.h181189.exercises.Problem;
 public class Problem1_1 implements Problem {
 
 	@Override
-	public int solution() {
-		return 0;
+	public void solve() {
+
 	}
 	
 }

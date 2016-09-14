@@ -11,15 +11,9 @@ public class Problem3_2 implements Problem {
 	private String[] words;
 	
 	@Override
-	public int solution() {
-		solve();
-		return 0;
-	}
-	
-	private void solve() {
+	public void solve() {
 		a();
 		b();
-		System.out.println();
 		c();
 	}
 	

@@ -7,13 +7,7 @@ import no.hib.h181189.exercises.Problem;
 public class Problem3_5 implements Problem {
 
 	@Override
-	public int solution() {
-		solve();
-		System.out.println();
-		return 0;
-	}
-
-	private void solve() {
+	public void solve() {
 		Out output = new Out();
 		In input = new In();
 		String title = "Analyse av temperaturene"; 
@@ -34,7 +28,5 @@ public class Problem3_5 implements Problem {
 		output.outln("\n");
 		output.outln("Gjennomsnittstemperaturen var " + (total / 7) + ".");
 		output.outln("Maksimum for denne uken var " + max + ".");
-		
 	}
-
 }

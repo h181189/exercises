@@ -5,7 +5,7 @@ import no.hib.h181189.exercises.Problem;
 public class Problem2_1 implements Problem {
 	
 	@Override
-	public int solution() {
+	public void solve() {
 		int i;
 		
 		System.out.println("Test av repetisjonssetning.");
@@ -22,8 +22,6 @@ public class Problem2_1 implements Problem {
 			}
 			i = i + 1;
 		}
-		
-		return 0;
 	}
 	
 }

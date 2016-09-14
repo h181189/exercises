@@ -1,5 +1,12 @@
 package no.hib.h181189.exercise1;
 
-public class Problem1_4 {
+import no.hib.h181189.exercises.Problem;
+
+public class Problem1_4 implements Problem {
+
+	@Override
+	public void solve() {
+		
+	}
 
 }
