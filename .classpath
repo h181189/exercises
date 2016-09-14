@@ -2,6 +2,6 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="/Users/bendikjohansen/Dropbox/Projects/exercises/Libraries/easyIO.jar" sourcepath="Libraries"/>
+	<classpathentry kind="lib" path="/Users/bendikjohansen/Downloads/easyIO/easyIO.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

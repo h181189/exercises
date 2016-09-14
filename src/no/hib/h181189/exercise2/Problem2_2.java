@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import no.hib.h181189.exercises.Problem;
 
-public class Problem2 implements Problem {
+public class Problem2_2 implements Problem {
 
 	@Override
 	public int solution() {

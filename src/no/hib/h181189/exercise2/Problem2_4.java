@@ -6,7 +6,7 @@ import javax.swing.JOptionPane;
 
 import no.hib.h181189.exercises.Problem;
 
-public class Problem4 implements Problem {
+public class Problem2_4 implements Problem {
 
 	@Override
 	public int solution() {

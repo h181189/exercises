@@ -4,7 +4,7 @@ import easyIO.In;
 import easyIO.Out;
 import no.hib.h181189.exercises.Problem;
 
-public class Problem5 implements Problem {
+public class Problem3_5 implements Problem {
 
 	@Override
 	public int solution() {

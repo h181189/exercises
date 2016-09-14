@@ -4,7 +4,7 @@ import javax.swing.JOptionPane;
 
 import no.hib.h181189.exercises.Problem;
 
-public class Problem5 implements Problem {
+public class Problem2_5 implements Problem {
 
 	final int MAX_LIMIT = 100;
 	final int MIN_LIMIT = 0;

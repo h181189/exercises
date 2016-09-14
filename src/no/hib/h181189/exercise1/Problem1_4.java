@@ -1,5 +1,5 @@
 package no.hib.h181189.exercise1;
 
-public class Problem4 {
+public class Problem1_4 {
 
 }

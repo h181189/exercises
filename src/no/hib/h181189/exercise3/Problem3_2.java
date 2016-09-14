@@ -6,7 +6,7 @@ import java.util.Scanner;
 import easyIO.In;
 import no.hib.h181189.exercises.Problem;
 
-public class Problem2 implements Problem {
+public class Problem3_2 implements Problem {
 
 	private String[] words;
 	

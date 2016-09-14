@@ -4,7 +4,7 @@ import no.hib.h181189.exercises.Problem;
 
 import javax.swing.JOptionPane;
 
-public class Problem3 implements Problem {
+public class Problem1_3 implements Problem {
 
 	@Override
 	public int solution() {

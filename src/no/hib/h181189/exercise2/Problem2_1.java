@@ -2,7 +2,7 @@ package no.hib.h181189.exercise2;
 
 import no.hib.h181189.exercises.Problem;
 
-public class Problem1 implements Problem {
+public class Problem2_1 implements Problem {
 	
 	@Override
 	public int solution() {

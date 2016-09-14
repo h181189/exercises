@@ -3,7 +3,7 @@ package no.hib.h181189.exercise3;
 import easyIO.Out;
 import no.hib.h181189.exercises.Problem;
 
-public class Problem4 implements Problem {
+public class Problem3_4 implements Problem {
 
 	@Override
 	public int solution() {
