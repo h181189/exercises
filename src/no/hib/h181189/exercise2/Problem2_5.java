@@ -6,8 +6,8 @@ import no.hib.h181189.exercises.Problem;
 
 public class Problem2_5 implements Problem {
 
-	final int MAX_LIMIT = 100;
-	final int MIN_LIMIT = 0;
+	private final int MAX_LIMIT = 100;
+	private final int MIN_LIMIT = 0;
 
 	@Override
 	public void solve() {

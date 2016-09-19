@@ -12,35 +12,25 @@ public class Problem3_2 implements Problem {
 	
 	@Override
 	public void solve() {
-		a();
-		b();
-		c();
-	}
-	
-	private void a() {
 		In input = new In("assets/problem3_2.txt");
 		int size = input.inInt();
 		words = new String[size];
-		for(int i = 0; i < size; i++) {
+		for(int i = 0; i < size && input.hasNext(); i++) {
 			words[i] = input.inWord();
 		}
-	}
-	
-	private void b() {
+		
 		System.out.println("Enter a pattern.");
-		String input = new Scanner(System.in).nextLine();
-		ArrayList<String> wordsHit = new ArrayList();
+		String userInput = new Scanner(System.in).nextLine();
+		ArrayList<String> wordsHit = new ArrayList<>();
 		for(String word : words) {
-			if(word.contains(input)) {
+			if(word.contains(userInput)) {
 				wordsHit.add(word);
 			}
 		}
 		
-		System.out.println("'" + input + "'" +  " has hit " + wordsHit.size() + " words:");
+		System.out.println("'" + userInput + "'" +  " has hit " + wordsHit.size() + " words:");
 		System.out.println(wordsHit.toString());
-	}
-	
-	private void c() {
+		
 		for(String word : words) {
 			if(word.length() == 1) {
 				System.out.println(word);
@@ -55,5 +45,4 @@ public class Problem3_2 implements Problem {
 			}
 		}
 	}
-	
 }
