@@ -4,39 +4,21 @@ import no.hib.h181189.exercises.Problem;
 
 public class Problem4_4 implements Problem {
 	
-	private int width;
-	private int height;
-	private char fill;
-	
-	public Problem4_4(int width, int height, char fill) {
-		this.width = width;
-		this.height = height;
-		this.fill = fill;
-	}
-	
-	public int getPerimeter() {
-		return 2 * (height + width);
-	}
-	
-	public int getArea() {
-		return height * width;
-	}
-	
-	public void printRectangle() {
-		for(int i = 0; i < height; i++) {
-			for(int j = 0; j < width; j++) {
-				System.out.print(fill + " ");
-			}
-			System.out.println();
-		}
-	}
+	private final int WIDTH = 20;
+	private final int HEIGHT = 6;
+	private final char FILL = '*';
 	
 	@Override
 	public void solve() {
-		System.out.println("Omkrets: " + getPerimeter());
-		System.out.println("Areal: " + getArea());
+		Rektangel r = new Rektangel(WIDTH, HEIGHT, FILL);
+		System.out.println("Bredde: " + WIDTH);
+		System.out.println("Høyde: " + HEIGHT);
+		System.out.println();;
+		
+		System.out.println("Omkrets: " + r.getPerimeter());
+		System.out.println("Areal: " + r.getArea());
 		System.out.println();
-		printRectangle();
+		r.printRectangle();
 	}
 
 }

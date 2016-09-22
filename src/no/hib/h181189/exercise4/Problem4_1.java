@@ -23,7 +23,8 @@ public class Problem4_1 implements Problem {
 			System.out.println("Nr 3, k = " + s.charAt(k));
 		}
 		
-		System.out.println("Del 4"); int tall = 7569;
+		System.out.println("Del 4");
+		int tall = 7569;
 		int hjelp = tall;
 		int aS = 0;
 		do {

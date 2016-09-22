@@ -6,13 +6,40 @@ public class Problem4_3 implements Problem {
 
 	@Override
 	public void solve() {
-
+		String a = "Hallo, jeg heter Bendik";
+		System.out.println(a);
+		System.out.println(reverseString(a));
+		System.out.println();
+		
+		int[] sortedNumbers = {1, 2, 3, 5, 8, 19, 135};
+		int[] unsortedNumbers = {1, 2, 3, 5, 8, 135, 19};
+		
+		System.out.println("Sorted: " + isSorted(sortedNumbers));
+		for(int number : sortedNumbers) {
+			System.out.print(number + " ");
+		}
+		System.out.println();
+		System.out.println();
+		
+		System.out.println("Sorted: " + isSorted(unsortedNumbers));
+		for(int number : unsortedNumbers) {
+			System.out.print(number + " ");
+		}
+		System.out.println();
+		System.out.println();
+		
+		String string = "hvilket ord i denne setningen er først i unicode?";
+		System.out.println(string);
+		String[] stringArray = string.split(" ");
+		System.out.println(firstInUnicode(stringArray));
 	}
 
-	public static void printReverseString(String string) {
+	public static String reverseString(String string) {
+		String reverse = "";
 		for (int i = string.length() - 1; i >= 0; i--) {
-			System.out.print(string.charAt(i));
+			reverse += string.charAt(i);
 		}
+		return reverse;
 	}
 
 	public static boolean isSorted(int[] array) {
@@ -37,22 +64,14 @@ public class Problem4_3 implements Problem {
 	}
 	
 	public static int compareStrings(String string, String anotherString) {
-        int len1 = string.length();
-        int len2 = anotherString.length();
-        int lim = Math.min(len1, len2);
-        char v1[] = string.toCharArray();
-        char v2[] = anotherString.toCharArray();
-
-        int k = 0;
-        while (k < lim) {
-            char c1 = v1[k];
-            char c2 = v2[k];
-            if (c1 != c2) {
-                return c1 - c2;
-            }
-            k++;
-        }
-        return len1 - len2;
+		char[] array = string.toCharArray();
+		char[] anotherArray = anotherString.toCharArray();
+		for(int i = 0; i < Math.min(array.length, anotherArray.length); i++) {
+			if(array[i] != anotherArray[i]) {
+				return array[i] - anotherArray[i];
+			}
+		}
+		return 0;
 	}
 
 }
