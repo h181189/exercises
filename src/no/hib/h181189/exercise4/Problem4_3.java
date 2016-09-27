@@ -40,6 +40,7 @@ public class Problem4_3 implements Problem {
 			reverse += string.charAt(i);
 		}
 		return reverse;
+		// return new StringBuilder(string).reverse().toString();
 	}
 
 	public static boolean isSorted(int[] array) {
@@ -48,7 +49,6 @@ public class Problem4_3 implements Problem {
 				return false;
 			}
 		}
-
 		return true;
 	}
 
