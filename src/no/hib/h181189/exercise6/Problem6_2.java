@@ -11,13 +11,24 @@ public class Problem6_2 implements Problem {
 	
 	@Override
 	public void solve() {
+		fillArray(array);
+		fillArray(array2);
+		fillArray(array3);
+		
+		
+		print(array);
+		print(array2);
+		print(array3);
+	}
+	
+	private void print(int[] array) {
+		System.out.printf("Sorting an array of the size %d elements, took %d ms.", array.length, sort(array));
+	}
+	
+	private void fillArray(int[] array) {
 		for(int i = 0; i < array.length; i++) {
 			array[i] = (int) (Math.random() * 1000);
 		}
-		
-		System.out.println(sort(array));
-		System.out.println(sort(array2));
-		System.out.println(sort(array3));
 	}
 	
 	public long sort(int[] array) {
