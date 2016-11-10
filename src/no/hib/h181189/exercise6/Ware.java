@@ -51,9 +51,9 @@ public class Ware {
 	}
 	
 	public void print() {
-		System.out.println("Name: " + name);
-		System.out.println("Price: " + price);
-		System.out.println("Ware number: " + wareNumber);
+		System.out.printf("Name: %s\n", name);
+		System.out.printf("Price: %.2f\n", price);
+		System.out.printf("Ware number: %d\n", wareNumber);
 	}
 	
 }
